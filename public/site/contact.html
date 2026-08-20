@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Snapping Turtle Media</title>
+<meta name="description" content="Get in touch with Snapping Turtle Media — Dubai HQ, Delhi-NCR studio, and East Asia enquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav-inner">
+    <a href="index.html"><img class="logo" src="assets/logo-white.png" alt="Snapping Turtle Media"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="our-work.html">Our Work</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-solid nav-cta">Start a project</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="our-work.html">Our Work</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero hexfield-target" style="padding-bottom:30px">
+  <div class="hero-glow"></div>
+  <svg class="hexfield-svg" id="hexfield"></svg>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span>Contact</div>
+    <div class="eyebrow" style="margin-top:22px">LET'S TALK</div>
+    <h1>Tell us what<br>you're building.</h1>
+    <p class="lead">Whether it's a single CGI shoot or a full market-entry campaign, briefs usually get a reply within one business day.</p>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <div class="eyebrow">SEND A BRIEF</div>
+      <form id="contactForm" onsubmit="return false;">
+        <div class="field-row">
+          <div class="field"><label for="fname">Name</label><input id="fname" type="text" placeholder="Your full name" required></div>
+          <div class="field"><label for="femail">Email</label><input id="femail" type="email" placeholder="you@company.com" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="fcompany">Company</label><input id="fcompany" type="text" placeholder="Company name"></div>
+          <div class="field">
+            <label for="fservice">Service</label>
+            <select id="fservice">
+              <option>Digital Marketing</option>
+              <option>Social &amp; Community</option>
+              <option>SEO &amp; Search Growth</option>
+              <option>Video, Motion &amp; CGI</option>
+              <option>Influencer &amp; UGC</option>
+              <option>Website &amp; App Development</option>
+              <option>Ecommerce Experience</option>
+              <option>WhatsApp &amp; Conversational</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="fmsg">Project details</label><textarea id="fmsg" placeholder="Tell us about your brand, timeline and goals" required></textarea></div>
+        <button type="submit" class="btn btn-solid">Send brief <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></button>
+        <p class="form-note">This form needs to be connected to your email or CRM before going live — currently a static template.</p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="eyebrow">STUDIO LOCATIONS</div>
+      <div class="contact-info-item">
+        <div class="hex-outline"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <div><h4>Dubai HQ</h4><p>[Office address on file] — United Arab Emirates</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="hex-outline"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <div><h4>Delhi-NCR Studio</h4><p>NX ONE, Greater Noida (West), Uttar Pradesh, India</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="hex-outline"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div><h4>Phone</h4><a href="tel:+971000000000">+971 00 000 0000</a></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="hex-outline"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+        <div><h4>Email</h4><a href="mailto:hello@snappingturtlemedia.com">hello@snappingturtlemedia.com</a></div>
+      </div>
+
+      <div class="map-strip">
+        <div class="hex-outline"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg></div>
+        <div><b>Now taking East Asia briefs</b><span>Singapore &amp; Hong Kong enquiries welcomed — early client slots open for Q3.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="foot-logo" src="assets/logo-white.png" alt="Snapping Turtle Media">
+        <p style="max-width:34ch;font-size:14px">A full-funnel creative &amp; performance marketing studio operating across the Gulf, South Asia and East Asia.</p>
+      </div>
+      <div>
+        <h5>Navigate</h5>
+        <div class="foot-links">
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="our-work.html">Our Work</a><a href="portfolio.html">Portfolio</a>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <div class="foot-links">
+          <a href="service-detail.html">Digital Marketing</a><a href="service-detail.html">Video &amp; CGI</a><a href="services.html">Website Development</a><a href="services.html">Influencer &amp; UGC</a><a href="services.html">SEO</a>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="foot-links">
+          <a href="contact.html">Dubai HQ — [address on file]</a>
+          <a href="contact.html">Delhi-NCR Studio — NX ONE, Greater Noida (West), U.P.</a>
+          <a href="mailto:hello@snappingturtlemedia.com">hello@snappingturtlemedia.com</a>
+          <a href="tel:+971000000000">+971 00 000 0000</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Snapping Turtle Media. All rights reserved.</span>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22H16.7l-5.2-6.8L5.6 22H2.5l8.1-9.3L1.7 2h6.8l4.7 6.2L18.9 2z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3V8.98zm7 0h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12v6.32h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-4V8.98z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
