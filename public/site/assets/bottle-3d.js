@@ -32,7 +32,7 @@ function loadModel() {
   return modelPromise;
 }
 
-/* Normalise: fit into ~2.4 units, recentre, boost env reflections. */
+/* Normalise: fit into ~1.75 units, recentre, boost env reflections. */
 function prepare(source) {
   const model = source.clone(true);
   const box = new THREE.Box3().setFromObject(model);
