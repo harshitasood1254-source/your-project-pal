@@ -37,7 +37,7 @@ function prepare(source) {
   const model = source.clone(true);
   const box = new THREE.Box3().setFromObject(model);
   const size = box.getSize(new THREE.Vector3());
-  const scale = 2.4 / (Math.max(size.x, size.y, size.z) || 1);
+  const scale = 1.75 / (Math.max(size.x, size.y, size.z) || 1);
   model.scale.setScalar(scale);
   const center = box.getCenter(new THREE.Vector3());
   model.position.set(-center.x * scale, -center.y * scale, -center.z * scale);
@@ -111,7 +111,7 @@ function mountOverlay() {
   const renderer = makeRenderer(canvas);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
-  camera.position.set(0, 0.2, 5.2);
+  camera.position.set(0, 0.2, 6.6);
   studioLights(scene);
   applyEnvironment(renderer, scene);
 
@@ -215,7 +215,7 @@ function mountInline() {
   const renderer = makeRenderer(canvas);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(0, 0.1, 5);
+  camera.position.set(0, 0.1, 6.5);
   studioLights(scene);
   applyEnvironment(renderer, scene);
 
