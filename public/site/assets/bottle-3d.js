@@ -142,7 +142,7 @@ function mountOverlay() {
   /* drag: overlay is click-through, so a drag only starts when the
      pointer goes down near the bottle and not on a link/button. */
   const drag = { active: false, lastX: 0, lastY: 0, targetY: 0, targetZ: 0 };
-  const autoSpin = { y: group.rotation.y, speed: 0.5 }; // continuous 360° rotation on Y
+  const autoSpin = { z: group.rotation.z, speed: 0.5 }; // continuous 360° rotation on Z
   const projected = new THREE.Vector3();
   const nearBottle = (x, y) => {
     projected.set(group.position.x, group.position.y, group.position.z).project(camera);
@@ -191,12 +191,16 @@ function mountOverlay() {
     group.position.y = damp(group.position.y, floatY, 3.8, dt);
     group.position.z = damp(group.position.z, floatZ - 0.2, 3.8, dt);
 
-    autoSpin.y += dt * autoSpin.speed; // full 360° turn around the Y-axis
-    const targetRotY = autoSpin.y + drag.targetY + progress * 1.8;
-    group.rotation.y = damp(group.rotation.y, targetRotY, 4.2, dt);
+    autoSpin.z += dt * autoSpin.speed; // full 360° turn around the Z-axis
+    group.rotation.y = damp(
+      group.rotation.y,
+      drag.targetY + progress * 1.8,
+      4.2,
+      dt,
+    );
     group.rotation.z = damp(
       group.rotation.z,
-      drag.targetZ + Math.sin(t * 0.5) * 0.15,
+      autoSpin.z + drag.targetZ + Math.sin(t * 0.5) * 0.15,
       4.2,
       dt,
     );
